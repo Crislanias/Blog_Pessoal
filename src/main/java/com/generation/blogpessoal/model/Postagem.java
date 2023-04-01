@@ -63,5 +63,10 @@ public class Postagem {
 		this.data = data;
 	}
 
+	public Postagem getTema() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 }

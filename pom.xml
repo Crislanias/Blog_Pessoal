@@ -56,6 +56,11 @@
 			<artifactId>acoli</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.helloworld</groupId>
+			<artifactId>helloworld</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

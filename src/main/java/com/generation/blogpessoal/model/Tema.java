@@ -4,11 +4,13 @@ import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 
@@ -22,6 +24,8 @@ import jakarta.validation.constraints.NotNull;
 
 		@NotNull(message = "O Atributo Descrição é obrigatório")
 		private String descricao;
+
+	    @OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
 
 		 @ManyToOne
 		   
